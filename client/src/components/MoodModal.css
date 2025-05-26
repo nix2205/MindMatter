@@ -1,0 +1,53 @@
+/* client/src/components/MoodModal.css */
+.mood-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.mood-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.emoji-options {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.mood-btn {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s;
+}
+
+.mood-btn.selected {
+  transform: scale(1.2);
+  border: 2px solid #444;
+}
+
+.star-rating {
+  margin-bottom: 1rem;
+}
+
+.modal-actions button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
